@@ -41,7 +41,7 @@ const NavBar = () => {
             <div className='flex gap-3 uppercase font-semibold'>
             {isAuthenticated ? (
               <div className='flex items-center gap-4'>
-                <div className='text-sm flex gap-2'>Hello <p className='underline text-midnight cursor-pointer'>{user.name}</p></div>
+                <Link to="/profile"><div className='text-sm flex gap-2'>Hello <p className='underline text-midnight cursor-pointer'>{user.name}</p></div></Link>
                 <button onClick={handleLogout} className='bg-gradient-to-r from-pink-color to-pale-pink py-3 px-5 rounded-xl text-white font-semibold text-lg shadow-md shadow-pale-pink'>Logout</button>
               </div>
           ) : (
